@@ -63,6 +63,66 @@ body {
     color: #00abf0; 
 }
 
+/* HEADER NAVIGATION */
+.navbar {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+/* HOME PAGE SOCIALS BUTTONS */
+.home-sci {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Moves it to the right */
+    margin-right: 20px; /* Add margin to create space between logo and social buttons */
+}
+
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    transition: .5s;
+    margin-left: 10px; /* Add spacing between social buttons */
+}
+
+.home-sci a:hover {
+    color: #081b29;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+
 /* HOME PAGE FORMAT */
 .home {
     height: 100vh;
@@ -211,73 +271,15 @@ body {
     width: 100%;
 }
 
-/* HOME PAGE SOCIALS BUTTONS */
-.home-sci {
-    position: absolute;
-    bottom: 40px;
-    width: 170px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.home-sci::before { 
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #081b29;
-    animation: showRight 1s ease forwards;
-    animation-delay: 2.5s;
-    z-index: 2;
-}
-
-.home-sci a {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid #00abf0;
-    border-radius: 50%;
-    font-size: 20px;
-    color: #00abf0;
-    text-decoration: none;
-    z-index: 1;
-    overflow: hidden;
-    transition: .5s;
-}
-
-.home-sci a:hover {
-    color: #081b29;
-}
-
-.home-sci a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #00abf0;
-    z-index: -1;
-    transition: .5s;
-}
-
-.home-sci a:hover::before {
-    width: 100%;
-}
-
 /* HOME PERSONAL PICTURE */
 .home-imgHover {
     position: absolute;
     top: calc(50% - 250px); /* Adjust vertically as needed */
     right: 30px;
-    width: 250px; /* Adjust size as needed */
-    height: 250px; /* Adjust size as needed */
+    width: 350px; /* Adjust size as needed */
+    height: 350px; /* Adjust size as needed */
+    border-radius: 5%;
+    border-color: black;
     background: transparent;
     transition: 3s;
     animation: manipActiveHover .1s forwards;
