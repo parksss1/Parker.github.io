@@ -66,9 +66,6 @@ body {
 /* HOME PAGE FORMAT */
 .home {
     height: 100vh;
-    background: url('parker.jpeg') no-repeat; 
-    background-size: cover;
-    background-position: center;
     display: flex;
     align-items: center;
     padding: 0 10%;
@@ -214,7 +211,7 @@ body {
     width: 100%;
 }
 
-/* HOME PAGE SOCIALS */
+/* HOME PAGE SOCIALS BUTTONS */
 .home-sci {
     position: absolute;
     bottom: 40px;
@@ -274,7 +271,7 @@ body {
     width: 100%;
 }
 
-/* HOME PICTURE */
+/* HOME PERSONAL PICTURE */
 .home-imgHover {
     position: absolute;
     top: calc(50% - 250px); /* Adjust vertically as needed */
@@ -288,6 +285,11 @@ body {
     pointer-events: none;
     border-radius: 50%; /* Make it circular */
     overflow: hidden; /* Ensure content inside the circle is hidden if it exceeds the circle's bounds */
+}
+
+.home-imgHover img {
+    width: 100%; /* Ensure the image fills the circular container */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .home-imgHover:hover {
