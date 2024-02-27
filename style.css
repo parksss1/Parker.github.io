@@ -6,11 +6,12 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+/* BACKGROUND */
 body {
     color: #ededed;
 }
 
+/* HEADER */
 .header {
     position: fixed;
     top: 0;
@@ -24,6 +25,7 @@ body {
     z-index: 100;
 }
 
+/* LOGO (NAME) */
 .logo {
     position: relative;
     font-size: 25px;
@@ -31,6 +33,7 @@ body {
     text-decoration: none;
     font-weight: 600;
 }
+
 
 .logo::before {
     content: '';
@@ -44,6 +47,7 @@ body {
     animation-delay: 1s;
 }
 
+ /* HEADER NAVIGATION */
 .navbar a {
     font-size: 18px;
     color: #ededed;
@@ -53,11 +57,13 @@ body {
     transition: .3s;
 }
 
+/* HOVER OVER NAVBAR ANIMATION */
 .navbar a:hover,
 .navbar a.active {
     color: #00abf0; 
 }
 
+/* HOME PAGE FORMAT */
 .home {
     height: 100vh;
     background: url('parker.jpeg') no-repeat; 
@@ -68,16 +74,19 @@ body {
     padding: 0 10%;
 }
 
+/*HOME PAGE TITLE, DESCRIPTION */
 .home-content {
     max-width: 600px;
 }
 
+/* HOME PAGE TITLE EDIT */
 .home-content h1 {
     position: relative;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
 }
+
 
 .home-content h1::before {
     content: '';
@@ -91,6 +100,7 @@ body {
     animation-delay: 1s;
 }
 
+/* HOME PAGE HEADER3 EDIT */
 .home-content h3 {
     position: relative;
     font-size: 32px;
@@ -99,7 +109,7 @@ body {
 }
 
 .home-content h3::before {
-    content: '';
+    content: ''; 
     position: absolute;
     top: 0;
     right: 0;
@@ -110,6 +120,7 @@ body {
     animation-delay: 1.3s;
 }
 
+/* HOME PAGE DECRIPTION EDIT */
 .home-content p {
     position: relative;
     font-size: 16px;
@@ -125,7 +136,7 @@ body {
     height: 100%;
     background: #081b29;
     animation: showRight 1s ease forwards;
-    animation-delay: .6s;
+    animation-delay: 1.6s;
 }
 
 .home-content .btn-box {
@@ -134,7 +145,6 @@ body {
     justify-content: space-between;
     width: 345px;
     height: 50px;
-    
 }
 
 .home-content .btn-box::before { 
@@ -150,6 +160,7 @@ body {
     z-index: 2 ;
 }
 
+/* INTERACTIVE HOME PAGE BUTTONS */
 .btn-box a {
     position: relative;
     display: inline-flex;
@@ -173,6 +184,7 @@ body {
     color: #00abf0
 }
 
+/* INTERACTIVE HOME BUTTONS */
 .btn-box a:nth-child(2) {
     background: transparent;
     color: #00abf0;
@@ -202,6 +214,7 @@ body {
     width: 100%;
 }
 
+/* HOME PAGE SOCIALS */
 .home-sci {
     position: absolute;
     bottom: 40px;
@@ -238,6 +251,7 @@ body {
     text-decoration: none;
     z-index: 1;
     overflow: hidden;
+    transition: .5s;
 }
 
 .home-sci a:hover {
@@ -249,7 +263,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 0;
     height: 100%;
     background: #00abf0;
     z-index: -1;
@@ -260,6 +274,7 @@ body {
     width: 100%;
 }
 
+/* HOME PICTURE */
 .home-imgHover {
     position: absolute;
     top: 0;
@@ -267,11 +282,10 @@ body {
     width: 500px;
     height: 100%;
     background: transparent;
-    transition: .3s;
+    transition: 3s;
     animation: manipActiveHover .1s forwards;
     animation-delay: 4s;
     pointer-events: none;
-
 }
 
 .home-imgHover:hover {
