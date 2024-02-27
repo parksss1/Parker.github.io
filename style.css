@@ -29,7 +29,7 @@ body {
 .logo {
     position: relative;
     font-size: 25px;
-    text-decoration-color: #00abf0;
+    color: #4a4b4d;
     text-decoration: none;
     font-weight: 600;
 }
@@ -155,12 +155,11 @@ body {
 /* HOME PAGE TITLE EDIT */
 .home-content h1 {
     position: relative;
-    color: black;
+    color: #4a4b4d;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
 }
-
 
 .home-content h1::before {
     content: '';
