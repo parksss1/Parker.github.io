@@ -277,15 +277,17 @@ body {
 /* HOME PICTURE */
 .home-imgHover {
     position: absolute;
-    top: 0;
+    top: calc(50% - 250px); /* Adjust vertically as needed */
     right: 30px;
-    width: 500px;
-    height: 100%;
+    width: 250px; /* Adjust size as needed */
+    height: 250px; /* Adjust size as needed */
     background: transparent;
     transition: 3s;
     animation: manipActiveHover .1s forwards;
     animation-delay: 4s;
     pointer-events: none;
+    border-radius: 50%; /* Make it circular */
+    overflow: hidden; /* Ensure content inside the circle is hidden if it exceeds the circle's bounds */
 }
 
 .home-imgHover:hover {
