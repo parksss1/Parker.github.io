@@ -80,7 +80,7 @@ body {
 
 /* HOME PAGE SOCIALS BUTTONS */
 .home-sci {
-    position: relative;
+    position: absolute;
     bottom: 40px;
     width: 170px;
     display: flex;
