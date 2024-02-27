@@ -29,7 +29,7 @@ body {
 .logo {
     position: relative;
     font-size: 25px;
-    color: #00abf0;
+    text-decoration-color: #00abf0;
     text-decoration: none;
     font-weight: 600;
 }
@@ -79,15 +79,30 @@ body {
 }
 
 /* HOME PAGE SOCIALS BUTTONS */
+/* HOME PAGE SOCIALS BUTTONS */
 .home-sci {
-    position: relative;
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
     display: flex;
-    align-items: center;
-    margin-left: auto; /* Moves it to the right */
-    margin-right: 20px; /* Add margin to create space between logo and social buttons */
+    justify-content: space-between;
+}
+
+.home-sci::before { 
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.5s;
+    z-index: 2;
 }
 
 .home-sci a {
+    position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -99,8 +114,9 @@ body {
     font-size: 20px;
     color: #00abf0;
     text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
     transition: .5s;
-    margin-left: 10px; /* Add spacing between social buttons */
 }
 
 .home-sci a:hover {
