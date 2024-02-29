@@ -78,11 +78,10 @@ body {
     transition: .3s;
 }
 
-/* HOME PAGE SOCIALS BUTTONS */
+/* SOCIALS BUTTONS */
 .home-sci {
-    /* position: relative; */
     bottom: 40px;
-    width: 170px; 
+    width: 140px; 
     display: flex;
     justify-content: space-between;
 }
@@ -314,7 +313,7 @@ label {
     border: 1px solid #ededed;
     outline: none;
     padding: 10px;
-    box-sizing: border-box;
+    box-sizing: 100px;
 }
 
 .button {
