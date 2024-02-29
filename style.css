@@ -44,7 +44,7 @@ body {
     height: 100%;
     background: #ededed;
     animation: showRight 1s ease forwards;
-    animation-delay: 1s;
+    animation-delay: .5s;
 }
 
  /* HEADER NAVIGATION */
@@ -96,7 +96,7 @@ body {
     height: 100%;
     background: #ededed;
     animation: showRight 1s ease forwards;
-    animation-delay: 2.5s;
+    animation-delay: 1.5s;
     z-index: 2;
 }
 
@@ -155,7 +155,7 @@ body {
 .home-content h1 {
     position: relative;
     color: #4a4b4d;
-    font-size: 56px;
+    font-size: 60px;
     font-weight: 700;
     line-height: 1.2;
 }
@@ -169,13 +169,13 @@ body {
     height: 100%;
     background: #ededed;
     animation: showRight 1s ease forwards;
-    animation-delay: 1s;
+    animation-delay: .5s;
 }
 
 /* HOME PAGE HEADER3 EDIT */
 .home-content h3 {
     position: relative;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
     color: #00abf0;
 }
@@ -189,12 +189,13 @@ body {
     height: 100%;
     background: #ededed;
     animation: showRight 1s ease forwards;
-    animation-delay: 1.3s;
+    animation-delay: .8s;
 }
 
 /* HOME PAGE DECRIPTION EDIT */
 .home-content p {
     position: relative;
+    color: #4a4b4d;
     font-size: 16px;
     margin: 20px 0 40px;
 }
@@ -208,82 +209,7 @@ body {
     height: 100%;
     background: #ededed;
     animation: showRight 1s ease forwards;
-    animation-delay: 1.6s;
-}
-
-.home-content .btn-box {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    width: 345px;
-    height: 50px;
-}
-
-.home-content .btn-box::before { 
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #ededed;
-    animation: showRight 1s ease forwards;
-    animation-delay: 1.9s;
-    z-index: 2 ;
-}
-
-/* INTERACTIVE HOME PAGE BUTTONS */
-.btn-box a {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 100%;
-    background: #00abf0;
-    border: 2px solid #00abf0;
-    border-radius: 8px; 
-    font-size: 19px;
-    color: #081b29; 
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 1px;
-    z-index: 1;
-    overflow: hidden;
-    transition: .5s ;
-}
-.btn-box a:hover {
-    color: #00abf0
-}
-
-/* INTERACTIVE HOME BUTTONS */
-.btn-box a:nth-child(2) {
-    background: transparent;
-    color: #00abf0;
-}
-
-.btn-box a:nth-child(2):hover {
-    color: #081b29;
-}
-
-.btn-box a:nth-child(2)::before {
-    background: #00abf0;
-}
-
-.btn-box a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0; 
-    width: 0;
-    height: 100%;
-    background: #081b29;
-    z-index: -1;
-    transition: .5s;
-}
-
-.btn-box a:hover:before {
-    width: 100%;
+    animation-delay: 1.1s;
 }
 
 /* HOME PERSONAL PICTURE */
@@ -298,7 +224,7 @@ body {
     background: transparent;
     transition: 3s;
     animation: manipActiveHover .1s forwards;
-    animation-delay: 4s;
+    animation-delay: 3.5s;
     pointer-events: none;
     border-radius: 50%; /* Make it circular */
     overflow: hidden; /* Ensure content inside the circle is hidden if it exceeds the circle's bounds */
@@ -323,12 +249,105 @@ body {
     height: 100%;
     background: #ededed;
     animation: showRight 1s ease forwards;
-    animation-delay: 3s;
+    animation-delay: 2.5s;
     z-index: 100;
 }
 
-/* KEYFRAME ANIMATION */
+.container {
+    width: 80%;
+    margin: 50px;
+}
 
+.contact-box {
+    background: #ededed;
+    display: flex;
+}
+
+.contact-left {
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+.contact-right {
+    flex-basis: 40%;
+    padding: 40px;
+    background: #4a4b4d;
+    color: #ededed;
+}
+
+h1{
+    margin-top: 10px;
+}
+
+.container p {
+    margin-bottom: 40px;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group {
+    flex-basis: 45%;
+}
+
+.input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ededed;
+    outline: none;
+    padding-bottom: 5x;
+}
+
+label {
+    margin-bottom: 6px;
+    display: block;
+    color: #4a4b4d;
+}
+
+.textarea {
+    width: 100%;
+    border: 1px solid #ededed;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.button {
+    background: #00abf0;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #4a4b4d;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28,0,181,0,3);
+}
+
+.contact-left h3 {
+    color: #00abf0;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.contact-right h3 {
+    color: #00abf0;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+tr td:first-child {
+    padding-right: 20px;
+}
+
+tr td {
+    padding-top: 20px;
+}
+
+ 
 @keyframes showRight {
     100% {
         width: 0;
