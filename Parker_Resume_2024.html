@@ -2,65 +2,33 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" conetent="IE=edge">
-    <meta name="viewport" content="width=device-width, iniitial-scale=1.0">
-    <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-</head>
-
-<body>
-
-    <header class="header">
-        <a href="#" class="logo">Andrew.</a>
-        <div class="home-sci">
-            <a href="https://www.linkedin.com/in/andrew-parker-024a42249/">
-                <i class='bx bxl-linkedin-square'></i>
-            </a>
-            <a href="https://github.com/parksss1">
-                <i class='bx bxl-github'></i>
-            </a>
-            <a href= "mailto:andrewmp409@gmail.com">
-                <i class='bx bxl-gmail'></i>
-            </a>
-        </div>
-
-        <nav class="navbar">
-            <a href="index.html" class="active">Home</a>
-            <a href="portfolio.html" class="active">Portfolio</a>
-            <a href="Parker_Resume.html" class="active">Resume</a>
-            <a href="contact.html" class="active">Contact</a>
-        </nav>
-
-        
-
-<head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Andrew Parker - Resume</title>
+  <title>Andrew Parker - Personal Portfolio & Resume</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    main {
       margin: 40px;
       color: #333;
       line-height: 1.6;
+      font-family: Arial, sans-serif;
     }
-    h1, h2, h3 {
+    main h1, main h2, main h3 {
       color: #222;
     }
-    h1 {
+    main h1 {
       font-size: 2em;
       margin-bottom: 5px;
     }
-    h2 {
+    main h2 {
       font-size: 1.5em;
       border-bottom: 1px solid #aaa;
       padding-bottom: 5px;
       margin-top: 30px;
     }
-    ul {
+    main ul {
       list-style: disc inside;
       margin: 0;
       padding: 0;
@@ -70,47 +38,74 @@
     }
   </style>
 </head>
+
 <body>
-  <h1>Andrew Parker</h1>
-  <div class="contact">
-    Fordham University | Bronx, NY | 508-930-9244 | <a href="mailto:andrewmp409@gmail.com">andrewmp409@gmail.com</a>
-  </div>
+  <header class="header">
+    <a href="#" class="logo">Andrew.</a>
 
-  <h2>Objective</h2>
-  <p>Computer Science major with hands-on experience in database administration, system automation, and network security. Passionate about designing scalable and high-availability database systems and optimizing infrastructure. Seeking to leverage these skills in database engineering, system administration, or backend development.</p>
+    <div class="home-sci">
+      <a href="https://www.linkedin.com/in/andrew-parker-024a42249/">
+        <i class='bx bxl-linkedin-square'></i>
+      </a>
+      <a href="https://github.com/parksss1">
+        <i class='bx bxl-github'></i>
+      </a>
+      <a href="mailto:andrewmp409@gmail.com">
+        <i class='bx bxl-gmail'></i>
+      </a>
+    </div>
 
-  <h2>Experience</h2>
-  <h3>Database Administrator</h3>
-  <p><strong>Fordham University – IT | April 2024 - Present</strong></p>
-  <ul>
-    <li>Designed and implemented a MySQL database to centralize Active Directory relationships for thousands of users, groups, and objects, improving data accessibility and automating lookup and audit tasks.</li>
-    <li>Developed Python and PowerShell scripts to automate data synchronization, including user-group-object mapping and metadata management.</li>
-    <li>Built and designed custom database tables to track firewall objects, network groups, and associated firewall rules for a comprehensive inventory and rule audit.</li>
-    <li>Created scripts to parse and validate active objects, decommission stale entries, and reduce rule conflicts.</li>
-    <li>Implemented MySQL installations on six servers with master-slave replication for high availability, supporting shared and personal metadata storage.</li>
-    <li>Created automated backup and restore scripts to Rubrik storage, automating token fetching and purge routines.</li>
-    <li>Migrated MySQL instances to a MariaDB HA Galera Cluster, enhancing scalability, reliability, and failover support, achieving 99.99% uptime.</li>
-    <li>Assisted in backend development of an internal IT budget tracking application with PostgreSQL, Node.js, Express.js, and Angular.</li>
-    <li>Installed and secured PostgreSQL, enforcing TLS encryption, role-based access control, and continuous archiving for backups.</li>
-  </ul>
+    <nav class="navbar">
+      <a href="index.html" class="active">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="Parker_Resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-  <h2>Education</h2>
-  <p><strong>Fordham University, Bronx, NY</strong> | Expected – 05/2026</p>
-  <ul>
-    <li>Bachelor of Science in Computer Science</li>
-    <li>Major GPA: 3.93</li>
-    <li>Dean’s List – 2022, 2023, 2024, 2025</li>
-    <li>Relevant Courses: Database Systems, Computer Algorithms, Data Structures, Computer Organization, Mobile Device Programming, Computer Science I and II with Lab, Discrete Structure I and II with Lab</li>
-  </ul>
+  <main>
+    <h1>Andrew Parker</h1>
+    <div class="contact">
+      Fordham University | Bronx, NY | 508-930-9244 | <a href="mailto:andrewmp409@gmail.com">andrewmp409@gmail.com</a>
+    </div>
 
-  <h2>Skills</h2>
-  <ul>
-    <li><strong>Databases & Administration:</strong> AWS RDS, MySQL, MariaDB, PostgreSQL, Oracle 19c, SQL Server (SSMS)</li>
-    <li><strong>Scripting & Automation:</strong> Python, C++, PowerShell, Bash, Swift</li>
-    <li><strong>Infrastructure & OS:</strong> RHEL, Windows Server, Active Directory, Networking (firewalls, subnets)</li>
-    <li><strong>Monitoring & Security:</strong> Rubrik, Database Replication & High Availability</li>
-    <li><strong>Data Visualization & Reporting Tools:</strong> Power BI, Lucidchart, Spotlight</li>
-    <li><strong>Productivity & Office Tools:</strong> Microsoft Office Suite (Excel, Word, PowerPoint), Google Sheets</li>
-  </ul>
+    <h2>Objective</h2>
+    <p>Computer Science major with hands-on experience in database administration, system automation, and network security. Passionate about designing scalable and high-availability database systems and optimizing infrastructure. Seeking to leverage these skills in database engineering, system administration, or backend development.</p>
+
+    <h2>Experience</h2>
+    <h3>Database Administrator</h3>
+    <p><strong>Fordham University – IT | April 2024 - Present</strong></p>
+    <ul>
+      <li>Designed and implemented a MySQL database to centralize Active Directory relationships for thousands of users, groups, and objects, improving data accessibility and automating lookup and audit tasks.</li>
+      <li>Developed Python and PowerShell scripts to automate data synchronization, including user-group-object mapping and metadata management.</li>
+      <li>Built and designed custom database tables to track firewall objects, network groups, and associated firewall rules for a comprehensive inventory and rule audit.</li>
+      <li>Created scripts to parse and validate active objects, decommission stale entries, and reduce rule conflicts.</li>
+      <li>Implemented MySQL installations on six servers with master-slave replication for high availability, supporting shared and personal metadata storage.</li>
+      <li>Created automated backup and restore scripts to Rubrik storage, automating token fetching and purge routines.</li>
+      <li>Migrated MySQL instances to a MariaDB HA Galera Cluster, enhancing scalability, reliability, and failover support, achieving 99.99% uptime.</li>
+      <li>Assisted in backend development of an internal IT budget tracking application with PostgreSQL, Node.js, Express.js, and Angular.</li>
+      <li>Installed and secured PostgreSQL, enforcing TLS encryption, role-based access control, and continuous archiving for backups.</li>
+    </ul>
+
+    <h2>Education</h2>
+    <p><strong>Fordham University, Bronx, NY</strong> | Expected – 05/2026</p>
+    <ul>
+      <li>Bachelor of Science in Computer Science</li>
+      <li>Major GPA: 3.93</li>
+      <li>Dean’s List – 2022, 2023, 2024, 2025</li>
+      <li>Relevant Courses: Database Systems, Computer Algorithms, Data Structures, Computer Organization, Mobile Device Programming, Computer Science I and II with Lab, Discrete Structure I and II with Lab</li>
+    </ul>
+
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Databases & Administration:</strong> AWS RDS, MySQL, MariaDB, PostgreSQL, Oracle 19c, SQL Server (SSMS)</li>
+      <li><strong>Scripting & Automation:</strong> Python, C++, PowerShell, Bash, Swift</li>
+      <li><strong>Infrastructure & OS:</strong> RHEL, Windows Server, Active Directory, Networking (firewalls, subnets)</li>
+      <li><strong>Monitoring & Security:</strong> Rubrik, Database Replication & High Availability</li>
+      <li><strong>Data Visualization & Reporting Tools:</strong> Power BI, Lucidchart, Spotlight</li>
+      <li><strong>Productivity & Office Tools:</strong> Microsoft Office Suite (Excel, Word, PowerPoint), Google Sheets</li>
+    </ul>
+  </main>
 </body>
+
 </html>
