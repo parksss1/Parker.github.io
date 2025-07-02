@@ -56,15 +56,14 @@
     </div>
 
     <nav class="navbar">
-      <a href="index.html" class="active">Home</a>
+      <a href="index.html">Home</a>
       <a href="portfolio.html">Portfolio</a>
-      <a href="Parker_Resume.html">Resume</a>
+      <a href="Parker_Resume.html" class="active">Resume</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <main>
-    <h1>Andrew Parker</h1>
     <div class="contact">
       Fordham University | Bronx, NY | 508-930-9244 | <a href="mailto:andrewmp409@gmail.com">andrewmp409@gmail.com</a>
     </div>
@@ -75,16 +74,27 @@
     <h2>Experience</h2>
     <h3>Database Administrator</h3>
     <p><strong>Fordham University – IT | April 2024 - Present</strong></p>
+    <h4>MySQL Active Directory Integration</h4>
     <ul>
-      <li>Designed and implemented a MySQL database to centralize Active Directory relationships for thousands of users, groups, and objects, improving data accessibility and automating lookup and audit tasks.</li>
+      <li>Designed and implemented a MySQL database to centralize Active Directory relationships for thousands of users, groups, and objects, significantly improving data accessibility and automating lookup and audit tasks.</li>
       <li>Developed Python and PowerShell scripts to automate data synchronization, including user-group-object mapping and metadata management.</li>
+    </ul>
+    <h4>Firewall Optimization & Network Audit</h4>
+    <ul>
       <li>Built and designed custom database tables to track firewall objects, network groups, and associated firewall rules for a comprehensive inventory and rule audit.</li>
-      <li>Created scripts to parse and validate active objects, decommission stale entries, and reduce rule conflicts.</li>
-      <li>Implemented MySQL installations on six servers with master-slave replication for high availability, supporting shared and personal metadata storage.</li>
-      <li>Created automated backup and restore scripts to Rubrik storage, automating token fetching and purge routines.</li>
-      <li>Migrated MySQL instances to a MariaDB HA Galera Cluster, enhancing scalability, reliability, and failover support, achieving 99.99% uptime.</li>
-      <li>Assisted in backend development of an internal IT budget tracking application with PostgreSQL, Node.js, Express.js, and Angular.</li>
-      <li>Installed and secured PostgreSQL, enforcing TLS encryption, role-based access control, and continuous archiving for backups.</li>
+      <li>Developed Python scripts to parse and validate active objects via ping, nslookup, and other checks, resulting in the decommission of stale entries and reducing rule conflicts.</li>
+      <li>Designed and implemented database tables to track over 3,500 firewall objects and 700 rules, improving inventory and audit accuracy by 100%.</li>
+    </ul>
+    <h4>MySQL/MariaDB Database and Server Configuration</h4>
+    <ul>
+      <li>Implemented and configured MySQL installations on six servers, setting up master-slave replication to ensure high availability while supporting the university’s shared and personal metadata storage requirements.</li>
+      <li>Created automated backup and restore scripts to Rubrik storage, using custom POST/GET scripts to automate token fetching and purge routines.</li>
+      <li>Migrated MySQL instances to a MariaDB HA Galera Cluster, enhancing scalability, reliability, and failover support, minimized downtime and data loss risk, achieving 99.99% uptime and ensuring seamless failover.</li>
+    </ul>
+    <h4>IT Budget Application Backend Development</h4>
+    <ul>
+      <li>Assisted in the backend development of an internal IT budget tracking application, ensuring secure deployment and integration with PostgreSQL, Node.js, Express.js, and Angular.</li>
+      <li>Installed and secured PostgreSQL, configuring role-based access control, enforcing TLS encryption, and enabling continuous archiving for backups to ensure data integrity and disaster recovery readiness.</li>
     </ul>
 
     <h2>Education</h2>
